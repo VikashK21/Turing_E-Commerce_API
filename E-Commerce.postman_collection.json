@@ -1,0 +1,752 @@
+{
+	"info": {
+		"_postman_id": "c2e2321f-39ae-4252-bbf4-01201f286f47",
+		"name": "E-Commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Departments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/departments",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Departments_By_ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/departments/3",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"departments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/categories/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories_inProduct_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/categories/inProduct/101",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"categories",
+						"inProduct",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categories_inDeparment_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/categories/inDepartment/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"categories",
+						"inDepartment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Attributes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/attributes",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"attributes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Attributes_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/attributes/2",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"attributes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Attributes_Values_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/attributes/values/6",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"attributes",
+						"values",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Attributes_inProduct_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/attributes/inProduct/11",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"attributes",
+						"inProduct",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/products",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products_search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/products/search?name=Chartres&description=Cathedral",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"products",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Chartres"
+						},
+						{
+							"key": "description",
+							"value": "Cathedral"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products_inCategory_By_ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/products/inCategory/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"products",
+						"inCategory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products_inDepartment_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/products/inDepartment/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"products",
+						"inDepartment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products_By_ID_Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/products/1/details",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"products",
+						"1",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/categories/inDepartment/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"categories",
+						"inDepartment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products_By_ID_Locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/products/1/locations",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"products",
+						"1",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products_By_ID_Reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/products/1/reviews",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"products",
+						"1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register a Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Vikash Kumar\",\n    \"email\": \"vikash@gmail.com\",\n    \"password\": \"vikash@1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login a Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"vikash@gmail.com\",\n    \"password\": \"vikash@1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/customers/login",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"customers",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"day_phone\": \"1234567123\",\n    \"eve_phone\": \"5432098765\",\n    \"mob_phone\": \"1234567890\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/customer/details",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"customer",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer_Details_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/customer/details",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"customer",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer_Address",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address_1\": \"Kodathi Colony\",\n    \"address_2\": \"Karmelaram Post, Sarjhapur Road\",\n    \"city\": \"Bangalore\",\n    \"region\": \"Karanatka\",\n    \"postal_code\": \"34523345\",\n    \"country\": \"India\",\n    \"shipping_region_id\": 560035\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/customer/address",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"customer",
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer_Credit_Card",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"creditCard\": \"234324552433452345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/customer/creditCard",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"customer",
+						"creditCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Review_FeedBack_By_ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"review\": \"adhbut\",\n    \"rating\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/products/1/reviews",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"products",
+						"1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shipping_Regions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/shipping/region",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"shipping",
+						"region"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shipping_Regions_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/shipping/regions/2",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"shipping",
+						"regions",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax_Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/tax",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"tax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax_Detail_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/tax/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"tax",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/orders/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders_of_Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/orders/inCustomer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"orders",
+						"inCustomer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ordered_shortDetails_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2022/ordered/shortDetails/1",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"ordered",
+						"shortDetails",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order_Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"shipping_id\": 1,\n    \"tax_id\": 1\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2022/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "2022",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
